@@ -1,0 +1,8 @@
+---
+description: CentOS 7 with cloud-init package
+os: centos 7.2
+parent: 71807790c9e225b677b74deff1404f964fc9488e1a691ebe4963cd92f5161dd8
+run:
+  - yum clean all
+  - yum update -y
+  - yum install -y cloud-init

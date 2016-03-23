@@ -1,0 +1,9 @@
+---
+description: CentOS 7 with open nebula context package
+os: centos 7.2
+parent: 71807790c9e225b677b74deff1404f964fc9488e1a691ebe4963cd92f5161dd8
+run:
+  - yum clean all
+  - yum update -y
+  - curl -o "/tmp/onecontext.rpm" "https://github.com/OpenNebula/addon-context-linux/releases/download/v4.14.4/one-context_4.14.4.rpm"
+  - yum localinstall -y /tmp/onecontext.rpm
